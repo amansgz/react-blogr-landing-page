@@ -1,8 +1,5 @@
-/* Overpass 300, 600 */
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
-
-/* Ubuntu 400, 500, 700*/
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+/* Overpass 300, 600 font-family: 'Overpass', sans-serif;*/
+/* Ubuntu 400, 500, 700 font-family: 'Ubuntu', sans-serif;*/
 
 *,
 *:before,
@@ -13,26 +10,55 @@
 }
 
 :root {
+	--light-red: hsl(356, 100%, 66%);/* (CTA text)*/
+	--very-light-red: hsl(355, 100%, 74%);/* (CTA hover background)*/
+	--very-dark-blue: hsl(208, 49%, 24%); /* (headings)*/
+	--white: hsl(0, 0%, 100%); /* (text)*/
+	--grayish-blue: hsl(240, 2%, 79%);/* (footer text)*/
+	--very-dark-grayish-blue: hsl(207, 13%, 34%);/*(body copy)*/
+	--very-dark-black-blue: hsl(240, 10%, 16%);/* (footer background)*/
 
---light-red: hsl(356, 100%, 66%);/* (CTA text)*/
---very-light-red: hsl(355, 100%, 74%);/* (CTA hover background)*/
---very-dark-blue: hsl(208, 49%, 24%); /* (headings)*/
---white: hsl(0, 0%, 100%); /* (text)*/
---grayish-blue: hsl(240, 2%, 79%);/* (footer text)*/
---very-dark-grayish-blue: hsl(207, 13%, 34%);/*(body copy)*/
---very-dark-black-blue: hsl(240, 10%, 16%);/* (footer background)*/
+	--dark-heading: hsl(208, 49%, 24%);
+	--dark-text: hsl(207, 13%, 34%);
 
+	/* Background gradient - Intro/CTA mobile nav */
+	--very-light-red: hsl(13, 100%, 72%);
+	--light-red: hsl(353, 100%, 62%);
 
-/* Background gradient - Intro/CTA mobile nav */
---very-light-red: hsl(13, 100%, 72%);
---light-red: hsl(353, 100%, 62%);
-
-/* Gradient body */
-
---very-dark-gray-blue: hsl(237, 17%, 21%);
---very-dark-desaturated-blue: hsl(237, 23%, 32%);
+	/* Gradient body */
+	--very-dark-gray-blue: hsl(237, 17%, 21%);
+	--very-dark-desaturated-blue: hsl(237, 23%, 32%);
 }
 
 body {
+	font-family: 'Overpass', sans-serif;
 	font-size: 16px;
+}
+picture {
+	display: block;
+}
+img {
+	display: block;
+	width: 100%;
+	object-fit: cover;
+}
+.container__title {
+	font-size: clamp(24px, 5vw, 32px);
+	font-weight: 600;
+	color: var(--dark-heading);
+}
+.content-info__title {
+	font-size: clamp(24px, 5vw, 24px);
+	font-weight: 600;
+	padding: .8em 0;
+}
+.content-info__title--dark {
+	color: var(--dark-heading);
+}
+.content-info__text {
+	font-size: clamp(16px, 1vw, 20px);
+	line-height: 1.5;
+}
+.content-info__text--dark {
+	color: var(--dark-text);
 }
