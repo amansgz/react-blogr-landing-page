@@ -1,0 +1,22 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+	background-color: var(--light-red);
+	border-bottom-left-radius: 100px;
+	text-align: center;
+}
+.hero__title {
+	width: 82vw;
+	font-size: clamp(33px, 5vw, 52px);
+	color: var(--white);
+}
+.hero__text {
+	width: 94vw;
+	padding: 2em;
+	font-size: clamp(18px, 1vw, 20px);
+	color: var(--white);
+	line-height: 1.5;
+}
