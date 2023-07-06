@@ -55,10 +55,16 @@ img {
 .content-info__title--dark {
 	color: var(--dark-heading);
 }
+.content-info__title--light {
+	color: var(--white);
+}
 .content-info__text {
 	font-size: clamp(16px, 1vw, 20px);
 	line-height: 1.5;
 }
 .content-info__text--dark {
 	color: var(--dark-text);
+}
+.content-info__text--light {
+	color: var(--white);
 }
