@@ -1,4 +1,5 @@
 import Design from "./components/Design/Design";
+import Infrastructure from "./components/Infrastructure/Infrastructure";
 import Features from "./components/Features/Features";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <main>
         <Design />
+        <Infrastructure />
         <Features />
       </main>
     </>
@@ -44,15 +46,6 @@ export default App
 
   Start for Free
   Learn More
-
-  
-
-//
-
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
-  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
-
 
 
 //
