@@ -1,3 +1,4 @@
+import Hero from "./components/Hero/Hero";
 import Design from "./components/Design/Design";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
 import Features from "./components/Features/Features";
@@ -7,6 +8,7 @@ function App() {
   return (
     <>
       <main>
+        <Hero />
         <Design />
         <Infrastructure />
         <Features />
@@ -42,13 +44,5 @@ export default App
   
   Login
   Sign Up
-
-  // Hero
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
-
 
 */
