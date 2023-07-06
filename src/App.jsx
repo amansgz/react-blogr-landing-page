@@ -1,6 +1,7 @@
 import Design from "./components/Design/Design";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
 import Features from "./components/Features/Features";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Infrastructure />
         <Features />
       </main>
+      <Footer />
     </>
   )
 }
@@ -23,6 +25,7 @@ export default App
   Marketplace
   Features
   Integrations
+  
 
   Company
 
@@ -48,25 +51,4 @@ export default App
   Learn More
 
 
-//
-  Product
-
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
-
-  Company
-
-  About
-  Team
-  Blog
-  Careers
-
-  Connect
-  
-  Contact
-  Newsletter
-  LinkedIn
 */
