@@ -1,45 +1,131 @@
-/* Overpass 300, 600 font-family: 'Overpass', sans-serif;*/
-/* Ubuntu 400, 500, 700 font-family: 'Ubuntu', sans-serif;*/
+:root {
+	--very-dark-blue: hsl(208, 49%, 24%);
+	--white: hsl(0, 0%, 100%);
+	--very-dark-grayish-blue: hsl(207, 13%, 34%);
+	--very-dark-black-blue: hsl(240, 10%, 16%);
+	--grayish-blue: hsl(240, 2%, 79%);
+	--light-red: hsl(356, 100%, 66%);
+	--very-light-red: hsl(355, 100%, 74%);
+	--very-dark-gray-blue: hsl(237, 17%, 21%);
+	--very-dark-desaturated-blue: hsl(237, 23%, 32%);
 
+
+	--clr-heading-light: var(--white);
+	--clr-heading-dark: var(--very-dark-blue);
+	--clr-text-light: var(--white);
+	--clr-text-dark: var(--very-dark-grayish-blue);
+	--clr-text-footer: var(--grayish-blue);
+	--clr-body-copy: var(--very-dark-grayish-blue);
+
+	
+	--clr-background-light: var(--white);
+	--clr-background-footer: var(--very-dark-black-blue);
+
+	--clr-cta-text: var(--light-red);
+	--clr-cta-hover-background: var(--very-light-red);
+	--clr-cta-border: var(--light-red);
+
+	--clr-link-footer: var(--grayish-blue);
+
+	/* Background gradient - Intro/CTA mobile nav */
+	--primary-gradient-intro: linear-gradient(to bottom, var(--very-light-red), var(--light-red));
+
+	/* Gradient body */
+	--secondary-gradient: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+	
+
+	/* FONTS */
+	/* Overpass 300, 600 font-family: 'Overpass', sans-serif;*/
+	/* Ubuntu 400, 500, 700 font-family: 'Ubuntu', sans-serif;*/
+
+	--ff-primary: 'Overpass', sans-serif;
+	--ff-secondary: 'Ubuntu', sans-serif;
+
+	--ff-body: var(--ff-primary);
+
+	/* FONT WEIGHTS */
+	--fw-light: 300;
+	--fw-normal: 400;
+	--fw-regular: 500;
+	--fw-bold: 600;
+	--fw-bolder: 700;
+
+	/* FONT SIZES */
+	--fs-300: 0.875rem;
+	--fs-400: 1rem;
+	--fs-500: 1.125rem;
+	--fs-600: 1.25rem;
+	--fs-700: 1.5rem;
+	--fs-800: 1.875rem;
+	--fs-900: 2.25rem;
+
+
+	--fs-body: var(--fs-400);
+	--fs-nav: var(--fs-300);
+	--fs-primary-heading: var(--fs-800);
+	--fs-secondary-heading: var(--fs-700);
+	--fs-h3: var(--fs-600);
+	--fs-text: var(--fs-400);
+	--fs-button: var(--fs-300);
+
+}
+@media screen and (min-width: 50em) {
+	:root {
+		--fs-primary-heading: var(--fs-900);
+		--fs-secondary-heading: var(--fs-800);
+		--fs-h3: var(--fs-700);
+		--fs-text: var(--fs-500);
+		--fs-nav: var(--fs-400);
+		--fs-button: var(--fs-400);
+	}
+}
+/*Box sizing rules*/
 *,
 *:before,
 *:after {
-	padding: 0;
-	margin: 0;
 	box-sizing: border-box;
 }
-
-:root {
-	--light-red: hsl(356, 100%, 66%);/* (CTA text)*/
-	--very-light-red: hsl(355, 100%, 74%);/* (CTA hover background)*/
-	--very-dark-blue: hsl(208, 49%, 24%); /* (headings)*/
-	--white: hsl(0, 0%, 100%); /* (text)*/
-	--grayish-blue: hsl(240, 2%, 79%);/* (footer text)*/
-	--very-dark-grayish-blue: hsl(207, 13%, 34%);/*(body copy)*/
-	--very-dark-black-blue: hsl(240, 10%, 16%);/* (footer background)*/
-
-	--dark-heading: hsl(208, 49%, 24%);
-	--dark-text: hsl(207, 13%, 34%);
-
-	/* Background gradient - Intro/CTA mobile nav */
-	--very-light-red: hsl(13, 100%, 72%);
-	--light-red: hsl(353, 100%, 62%);
-
-	/* Gradient body */
-	--very-dark-gray-blue: hsl(237, 17%, 21%);
-	--very-dark-desaturated-blue: hsl(237, 23%, 32%);
+/* Remove default margin */
+* {
+	padding: 0;
+	margin: 0;
 }
 
+html,
 body {
-	font-family: 'Overpass', sans-serif;
+	height: 100%;
+}
+
+/*General styling*/
+body {
+	font-family: var(--ff-body);
 	font-size: 16px;
 }
+h1 {
+	margin: 1rem auto;
+	font-size: var(--fs-primary-heading);
+	color: var(--clr-heading-light);
+}
+h2 {
+	font-size: var(--fs-secondary-heading);
+	font-weight: var(--fw-bold);
+}
+h3 {
+	font-size: var(--fs-h3);
+	font-weight: var(--fw-bold);
+}
+p {
+	margin: 1rem 0;
+	font-size: var(--fs-text);
+	line-height: 1.5;
+}
+figure,
 picture {
 	display: block;
 }
 img {
 	display: block;
-	width: 100%;
+	max-width: 100%;
 	object-fit: cover;
 }
 ul {
@@ -48,29 +134,66 @@ ul {
 a {
 	text-decoration: none;
 }
-.container__title {
-	font-size: clamp(24px, 5vw, 32px);
-	font-weight: 600;
-	color: var(--dark-heading);
+
+section {
+	padding: 4rem 1rem;
+	background-color: var(--clr-background-light);
 }
-.content-info__title {
-	font-size: clamp(24px, 5vw, 24px);
-	font-weight: 600;
-	padding: .8em 0;
+@media screen and (min-width: 50em) {
+	section {
+		padding: 3rem 6rem;
+	}
 }
-.content-info__title--dark {
-	color: var(--dark-heading);
+@media screen and (min-width: 70em) {
+	section {
+		padding: 3rem 8rem;
+	}
 }
-.content-info__title--light {
-	color: var(--white);
+/* Utilities */
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 }
-.content-info__text {
-	font-size: clamp(16px, 1vw, 20px);
-	line-height: 1.5;
+.title {
+	max-width: 14ch;
 }
-.content-info__text--dark {
-	color: var(--dark-text);
+.text {
+	max-width: 29ch;
 }
-.content-info__text--light {
-	color: var(--white);
+.title-light {
+	color: var(--clr-heading-light);
+}
+.title-dark {
+	color: var(--clr-heading-dark);
+}
+.text-light {
+	color: var(--clr-text-light);
+}
+.text-dark {
+	color: var(--clr-text-dark);
+}
+
+@media screen and (min-width: 50em){
+	.content-two-columns {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.content-four-columns {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		place-items: flex-start;
+	}
+	.column-md-left {
+		justify-content: center;
+		align-items: flex-start;
+		text-align: left;
+	}
+	.title {
+		max-width: 25ch;
+	}
+	.text {
+		max-width: 50ch;
+	}
 }
