@@ -1,22 +1,14 @@
-.hero {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	height: 75vh;
-	background-color: var(--light-red);
+.section-hero {
+	background-image: var(--primary-gradient-intro);
 	border-bottom-left-radius: 100px;
+}
+.container-hero {
+	background-image: url("./assets/bg-pattern-intro-mobile.svg");
+	background-size: 150% 100%;
+	background-position: top center;
+	background-repeat: no-repeat;
 	text-align: center;
 }
-.hero__title {
-	width: 82vw;
-	font-size: clamp(33px, 5vw, 52px);
-	color: var(--white);
-}
-.hero__text {
-	width: 94vw;
-	padding: 2em;
-	font-size: clamp(18px, 1vw, 20px);
-	color: var(--white);
-	line-height: 1.5;
+.container-hero .text {
+	margin: 1rem auto;
 }
