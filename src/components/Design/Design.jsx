@@ -1,5 +1,5 @@
 import "./Design.css";
-import {illustrationEditorMobile} from "../../assets"
+import {illustrationEditorMobile, illustrationEditorDesktop} from "../../assets"
 
 const Design = () => (
 	<section className= "section-light">
@@ -8,10 +8,14 @@ const Design = () => (
 			Designed for the future
 			</h2>
 			<div className= "content-two-columns">
-				<div className= "content__image">
-					<img src= {illustrationEditorMobile}/>
-				</div>
-
+				<picture className= "content__image">
+					<source srcSet= {illustrationEditorDesktop}
+					media= "(min-width: 50em)"/>
+					<source srcSet= {illustrationEditorMobile}
+					media= "(max-width: 50em)"/>
+					<img src= {illustrationEditorMobile} alt= "editor"/>
+				</picture>
+				
 				<div className= "content-info column-center column-md-left">
 					<h3 className= "title title-dark">
 						Introducing an extensible editor	

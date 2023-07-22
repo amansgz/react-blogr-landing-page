@@ -1,10 +1,17 @@
 import "./Features.css";
+import { illustrationLaptopMobile,illustrationLaptopDesktop } from "../../assets";
 
 const Features = () => (
 	<section>
 		<div className= "container">
 			<div className= "content-two-columns">
-				<div className= "content__image"></div>
+				<picture className= "content__image">
+					<source srcSet= {illustrationLaptopDesktop}
+					media= "(min-width: 50em)"/>
+					<source srcSet= {illustrationLaptopMobile}
+					media= "(max-width: 50em)"/>
+					<img src= {illustrationLaptopMobile} alt= "Laptop"/>
+				</picture>
 
 				<div className= "content-info column-center column-md-left">
 					<h2 className= "title title-dark">
