@@ -4,15 +4,15 @@ import { footerLinks } from "../constants";
 
 const Footer = () => (
 	<footer className= "footer">
-		<div className= "container">
-			<div className= "content-four-columns column-center">
+		<div className= "container-footer">
+			<div className= "flex-sm-column-center grid-md-four-columns">
 				<div className= "footer__logo">
 					<img src= {logo} alt="logo"/>
 				</div>
 				
 					{footerLinks.map((footerLink) => (
 						<div key= {footerLink.title}
-							className= "list-container column-center column-md-left">
+							className= "list-container">
 							<h2 className= "list-container__title">
 								{footerLink.title}
 							</h2>
