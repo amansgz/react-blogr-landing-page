@@ -1,14 +1,38 @@
 .section-hero {
-	background-image: var(--primary-gradient-intro);
+	padding: 6rem 1rem;
+
+	background-image: url("./assets/bg-pattern-intro-mobile.svg"), var(--primary-gradient-intro);
+	background-position: 34% 36%;
+	background-size: 340%;
+	background-repeat: no-repeat;
 	border-bottom-left-radius: 100px;
+	height: 60vh;
 }
 .container-hero {
-	background-image: url("./assets/bg-pattern-intro-mobile.svg");
-	background-size: 150% 100%;
-	background-position: top center;
-	background-repeat: no-repeat;
 	text-align: center;
 }
 .container-hero .text {
-	margin: 1rem auto;
+	margin: 1rem auto 2.5rem;
 }
+
+@media screen and (min-width: 767px) {
+	.section-hero {
+		padding: 3rem;
+		background-image: url("./assets/bg-pattern-intro-desktop.svg"), var(--primary-gradient-intro);
+		background-position: 34% 36%;
+		background-size: 150%;
+		height: 80vh;
+	}
+}
+@media screen and (min-width: 1280px) {
+	.section-hero {
+		padding: 9rem 8rem;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.section-hero {
+		padding: 9rem 10rem;
+		background-position: 26% 55%;
+		background-size: 230%;
+	}
+}		
