@@ -5,12 +5,14 @@ import {illustrationPhones} from "../../assets";
 const Infrastructure = () => (
 	<section className= "section-infrastructure">
 		<div className= "container">
-			<div className= "content-two-columns">
-				<picture className= "content__image">
-					<img src= {illustrationPhones} alt= "Phones"/>
-				</picture>
+			<div className= "flex-md-two-columns">
+				<div className= "item-image-phones">
+					<picture>
+						<img src= {illustrationPhones} alt= "Phones"/>
+					</picture>
+				</div>	
 
-				<div className= "content-info column-center column-md-left">
+				<div className= "item-content-infrastructure">
 					<h2 className= "title title-light">
 						State of the Art Infrastructure
 					</h2>
