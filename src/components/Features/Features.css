@@ -1,0 +1,50 @@
+.section-features {
+	padding: 4rem 1rem;
+	background-color: var(--clr-background-light);
+}
+.item-content-features {
+	text-align: center;
+}
+.item-content-features h2 {
+	font-size: var(--fs-alternative-md-heading);
+}
+
+@media screen and (min-width: 767px) {
+	.section-features {
+		padding: 6rem 3rem;
+		overflow: hidden;
+	}
+	.item-image-laptop {
+		width: 50%;
+		height: 30rem;
+		position: relative;
+	}
+	.item-image-laptop picture {
+		width: 35rem;
+		transform: translate(-240px, 0px);
+	}	
+	.item-content-features {
+		width: 50%;
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.section-features {
+		padding: 20rem 8rem;		
+	}
+	.item-image-laptop picture {
+		width: 63rem;
+		transform: translate(-487px, -163px);
+	}	
+}
+
+@media screen and (min-width: 1440px) {
+	.section-features {
+		padding: 20rem 10rem;		
+	}
+	.item-image-laptop picture {
+		width: 63rem;
+		transform: translate(-450px, -163px);
+	}	
+}
