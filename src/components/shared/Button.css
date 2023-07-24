@@ -1,8 +1,9 @@
 .btn {
 	padding: .8em 1em;
 	margin: .8em;
+	font-family: var(--ff-button);
 	font-size: var(--fs-button);
-	font-weight: var(--ff-bold);
+	font-weight: var(--fw-bold);
 	text-transform: capitalize;
 	border: none;
 	border-radius: 24px;
