@@ -3,11 +3,11 @@ import {WhiteButton, TransparentButton} from "../shared/Button";
 
 const Hero = () => (
 	<section className= "section-hero">
-		<div className= "container-hero container">
-			<h1 className= "title title-light">
+		<div className= "hero__container">
+			<h1 className= "hero__title">
 				A modern publishing platform
 			</h1>
-			<p className= "text text-light">
+			<p className= "hero__text">
 				Grow your audience and build your online brand
 			</p>	
 

@@ -1,58 +1,69 @@
 .section-design {
-	padding: 6rem 1rem;
-	padding-bottom: 18rem;
+	padding: var(--section-block-padding) var(--section-inline-padding);
 	background-color: var(--clr-background-light);
 }
-.container-title {
-	text-align: center;
-	margin-bottom: 4rem;
+.container {
+	padding-bottom: 12rem;
 }
-.item-content-design {
+.container__title {
 	text-align: center;
+	color: var(--clr-heading-dark);
+	margin-bottom: 6rem;
+}
+.container-design .content {
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+.container-design .content__title {
+	max-width: 16ch;
+	margin-top: 3rem;
+	color: var(--clr-heading-dark);
+}
+.container-design .content__text {
+	max-width: 31ch;
+	color: var(--clr-text-dark);
 }
 
 @media screen and (min-width: 767px) {
 	.section-design {
-		padding: 11rem 3rem;
 		overflow: hidden;
 	}
-	.item-image-editor {
+	.container-design .images {
 		order: 1;
 		width: 50%;
-		height: 30rem;
-		position: relative;
 	}
-	.item-image-editor picture {
-		width: 35rem;
-		transform: translate(28px, 0px);
+	.container-design .images picture {
+		width: 140%;
+		transform: translate(14%, 4%);
 	}
-	.item-content-design {
+	.container-design .content {
 		width: 50%;
+		place-items: start;
 		text-align: left;
+	}
+	.container-design .content__title {
+		max-width: 16ch;
+	}	
+	.container-design .content__text {
+		max-width: 55ch;
+	}
+	.container-design .content .content__title:nth-child(2) {
+		margin-top: 6rem;
 	}
 }
 
 @media screen and (min-width: 1280px) {
-	.section-design {
-		padding: 8rem;
-		padding-bottom: 19rem;
+	.container__title {
+		margin-bottom: 3rem;
 	}
-	.container-title {
-		margin-bottom: 6rem;
+	.container-design .images picture {
+		transform: translate(14%, -2%);
 	}
-	.item-image-editor picture {
-		width: 50rem;
-		transform: translate(70px, -178px);
+	.container-design .content__title {
+		max-width: 28ch;
 	}
-}
-
-@media screen and (min-width: 1440px) {
-	.section-design {
-		padding: 10rem;
-		padding-bottom: 19rem;
-	}
-	.item-image-editor picture {
-		width: 60rem;
-		transform: translate(70px, -225px);
+	.container-design .content__text {
+		max-width: 45ch;
 	}
 }

@@ -1,5 +1,5 @@
 footer {
-	padding: 3rem 1rem;
+	padding: var(--footer-block-padding) var(--section-inline-padding);
 	background-color: var(--clr-background-footer);
 	border-top-right-radius: 100px;
 	font-family: var(--ff-footer);
@@ -7,13 +7,13 @@ footer {
 .footer__logo {
 	margin: 3rem 0;
 }
-.list-container {	
+.list {	
 	margin: 2rem 0;
 	text-align: center;
 }
-.list-container__title {
-	margin: 1rem 0;
-	font-size: clamp(20px, 1vw, 22px);
+.list__title {
+	margin: 2rem 0 2.5rem;
+	font-size: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 0.2868)), 2.3rem);
 	font-weight: var(--fw-bold);
 	color: var(--white);	
 }
@@ -31,28 +31,17 @@ footer {
 }
 
 @media screen and (min-width: 767px) {
-	footer {
-		padding: 3rem;
-	}
 	.grid-md-four-columns {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		place-items: flex-start;
 	}
-	.list-container {	
+	.list {	
 		text-align: left;
 	}
 }
 @media screen and (min-width: 1280px) {
-	footer {
-		padding: 3rem 8rem;
-	}
-	.list-container__title {
+	.list__title {
 		margin-bottom: 1rem;
-	}
-}
-@media screen and (min-width: 1440px) {
-	footer {
-		padding: 3rem 10rem;
 	}
 }

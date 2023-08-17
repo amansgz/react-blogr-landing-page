@@ -12,8 +12,8 @@ const Footer = () => (
 				
 					{footerLinks.map((footerLink) => (
 						<div key= {footerLink.title}
-							className= "list-container">
-							<h2 className= "list-container__title">
+							className= "list">
+							<h2 className= "list__title">
 								{footerLink.title}
 							</h2>
 							<ul>

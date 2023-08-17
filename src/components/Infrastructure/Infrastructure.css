@@ -1,66 +1,57 @@
 .section-infrastructure {
-	padding-bottom: 3rem;
+	padding: var(--section-block-padding) var(--section-inline-padding);
 	background-image: url("../../assets/bg-pattern-circles.svg"), var(--secondary-gradient);
-	background-position: 53% 162%;
+/* 	background-size: 150%; */
+	background-size: contain;
+	background-position: 0px -120px;
 	background-repeat: no-repeat;
 	border-top-right-radius: 100px;
 	border-bottom-left-radius: 100px;
+	position: relative;	
+	height: 58rem;
 }
-.item-image-phones {	
-	width: 22rem;
+.container-infrastructure .images {
+	position: absolute;
+	top: -35%;
 }
-.item-image-phones picture{
-	transform: translate(0px , -190px);
-}
-.item-content-infrastructure {
+.container-infrastructure .content {
+	display: grid;
+	place-items: center;
 	text-align: center;
+	margin-top: 10rem;
 }
-.item-content-infrastructure h2 {
-	font-size: var(--fs-alternative-lg-heading);
+.container-infrastructure .content__title {
+	color: var(--clr-heading-light);
+}
+.container-infrastructure .content__text {
+	max-width: 31ch;
+	color: var(--clr-text-light);
 }
 
 @media screen and (min-width: 767px) {
-	.section-infrastructure {
-		padding: 3rem;
-		background-position: -151% 80%;
-	}
-	.section-infrastructure .container {
-		height: 20rem;
-	}
-	.item-image-phones {
+	.container-infrastructure .images {
 		width: 50%;
-		position: relative;
 	}
-	.item-image-phones picture {
-		width: 23rem;
-		transform: translate(-42px, 50px);
-	}
-	.item-content-infrastructure {
+	.container-infrastructure .content {
 		width: 50%;
+		place-items: start;
 		text-align: left;
+	}
+	.container-infrastructure .content__title {
+		max-width: 16ch;
+	}	
+	.container-infrastructure .content__text {
+		max-width: 55ch;
 	}
 }
 @media screen and (min-width: 1280px) {
-	.section-infrastructure {
-		padding: 2rem 8rem;
-		background-position: -86% 80%;
+	.container-infrastructure .images {
+		transform: translate(14%, -18%);
 	}
-	.item-image-phones picture {
-		width: 30rem;
-		transform: translate(-50px , -48px);
+	.container-infrastructure .content__title {
+		max-width: 28ch;
 	}
-}
-@media screen and (min-width: 1440px) {
-	.section-infrastructure {
-		padding: 2rem 10rem;
-		background-position: -47% 80%;
+	.container-infrastructure .content__text {
+		max-width: 45ch;
 	}
-	.section-infrastructure .container .flex-md-two-columns {
-		align-items: flex-start;
-	}
-	.item-image-phones picture {
-		width: 35rem;
-		transform: translate(-50px, -114px);
-	}	
-	
 }

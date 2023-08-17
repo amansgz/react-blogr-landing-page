@@ -2,7 +2,7 @@
 	padding: .8em 1em;
 	margin: .8em;
 	font-family: var(--ff-button);
-	font-size: var(--fs-button);
+	font-size: var(--font-size-button);
 	font-weight: var(--fw-bold);
 	text-transform: capitalize;
 	border: none;
