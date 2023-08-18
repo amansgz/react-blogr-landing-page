@@ -9,6 +9,8 @@ footer {
 }
 .list {	
 	margin: 2rem 0;
+	display: grid;
+	place-items: center;
 	text-align: center;
 }
 .list__title {

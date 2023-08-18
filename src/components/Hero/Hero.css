@@ -1,8 +1,8 @@
 .section-hero {
 	padding: var(--section-block-padding) var(--section-inline-padding);
-	background-image: url("./assets/bg-pattern-intro-mobile.svg"), var(--primary-gradient-intro);
-	background-position: 34% 36%;
-	background-size: 340%;
+	background-image: url("../assets/bg-pattern-intro-mobile.svg"), var(--primary-gradient-intro);
+	background-position: 35% 39%;
+	background-size: 314%;
 	background-repeat: no-repeat;
 	border-bottom-left-radius: 100px;
 }
@@ -21,9 +21,9 @@
 
 @media screen and (min-width: 767px) {
 	.section-hero {
-		background-image: url("./assets/bg-pattern-intro-desktop.svg"), var(--primary-gradient-intro);
-		background-position: 34% 36%;
-		background-size: 150%;
+		background-image: url("../assets/bg-pattern-intro-desktop.svg"), var(--primary-gradient-intro);
+		background-position: 28% 52%;
+		background-size: 187%;	
 	}
 	.hero__title {
 		max-width: 18ch;
@@ -35,11 +35,5 @@
 @media screen and (min-width: 1280px) {
 	.hero__title {
 		max-width: 28ch;
-	}
-}
-@media screen and (min-width: 1440px) {
-	.section-hero {
-		background-position: 26% 55%;
-		background-size: 230%;
 	}
 }

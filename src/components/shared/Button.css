@@ -19,7 +19,6 @@
 	color: var(--white);
 	cursor: pointer;
 }
-
 .btn-transparent {
 	background-color: transparent;
 	border: 1px solid var(--white);
@@ -31,4 +30,9 @@
 	border: 1px solid var(--clr-cta-border);
 	color: var(--clr-cta-text);
 	cursor: pointer;
+}
+@media screen and (min-width: 1280px) {
+	.btn {
+		padding: 1em 2em;
+	}
 }
