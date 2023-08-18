@@ -14,7 +14,7 @@
 	margin: 1rem auto;
 }
 .hero__text {
-	max-width: 30ch;
+	max-width: 26ch;
 	margin: 1rem auto 2.5rem;
 	color: var(--clr-text-light);
 }
