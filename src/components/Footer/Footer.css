@@ -39,6 +39,7 @@ footer {
 		place-items: flex-start;
 	}
 	.list {	
+		place-items: start;
 		text-align: left;
 	}
 }
