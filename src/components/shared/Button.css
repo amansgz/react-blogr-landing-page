@@ -12,6 +12,7 @@
 .btn-white {
 	background-color: var(--white);
 	color: var(--clr-cta-text);
+	transition: .1s ease;
 }
 .btn-white:hover,
 .btn-white:focus-visible {
@@ -23,6 +24,7 @@
 	background-color: transparent;
 	border: 1px solid var(--white);
 	color: var(--white);
+	transition: .1s ease;
 }
 .btn-transparent:hover,
 .btn-transparent:focus-visible {
@@ -31,8 +33,29 @@
 	color: var(--clr-cta-text);
 	cursor: pointer;
 }
+
+.btn-signup {
+	padding: 1em 2.5em;
+	background-image: var(--primary-gradient-intro);
+	color: var(--clr-text-light);
+	transition: .1s ease;
+}
+.btn-signup:hover,
+.btn-signup:focus-visible {
+	background-color: var(--clr-cta-hover-background);
+	color: var(--white);
+	cursor: pointer;
+}
+
 @media screen and (min-width: 1280px) {
 	.btn {
 		padding: 1em 2em;
 	}
+	.btn-signup {
+		background-image: none;
+		background-color: var(--white);
+		color: var(--clr-cta-text);
+		border: 1px solid var(--clr-cta-border);
+	}
+	
 }

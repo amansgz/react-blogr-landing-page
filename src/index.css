@@ -7,6 +7,7 @@
 	/* NEUTRAL */
 	--white: hsl(0, 0%, 100%);
 	--grayish-blue: hsl(240, 2%, 79%);
+	--light-grayish-blue: hsl(240, 30%, 95%);
 	--very-dark-grayish-blue: hsl(207, 13%, 34%);
 	--very-dark-black-blue: hsl(240, 10%, 16%);
 	--very-dark-gray-blue: hsl(237, 17%, 21%);
@@ -20,6 +21,7 @@
 	--clr-text-footer: var(--grayish-blue);
 	--clr-body-copy: var(--very-dark-grayish-blue);	
 	--clr-background-light: var(--white);
+	--clr-background-light-grayish: var(--light-grayish-blue);
 	--clr-background-footer: var(--very-dark-black-blue);
 	--clr-cta-text: var(--light-red);
 	--clr-cta-hover-background: var(--very-light-red);
@@ -88,6 +90,9 @@ html {
 body {
 	font-size: 1.6rem;
 	background-color: var(--clr-background-light);
+}
+main {
+	margin-top: -5rem;
 }
 figure,
 picture {

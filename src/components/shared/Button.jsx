@@ -11,3 +11,9 @@ export const TransparentButton = () => (
 		Learn more
 	</button>
 );
+
+export const SignUpButton = () => (
+	<button className= "btn btn-signup">
+		Sign Up
+	</button>
+);

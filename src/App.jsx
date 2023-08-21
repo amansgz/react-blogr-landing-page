@@ -1,3 +1,4 @@
+import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Design from "./components/Design/Design";
 import Infrastructure from "./components/Infrastructure/Infrastructure";
@@ -7,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
+    <Header />
       <main>
         <Hero />
         <Design />

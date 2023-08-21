@@ -1,0 +1,25 @@
+.dropdown {
+	display: none;
+	background-color: var(--clr-background-light-grayish);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 70vw;
+	padding: 1em 0;
+	border-radius: 10px;
+}
+.dropdown a {
+	color: var(--clr-text-dark);
+}
+
+.show {
+	display: block;
+}
+@media screen and (min-width: 992px) {
+	.dropdown {
+		width: 10vw;
+		align-items: start;
+		padding: 1em;
+		background-color: var(--clr-background-light);
+	}
+}

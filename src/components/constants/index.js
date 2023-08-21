@@ -1,3 +1,72 @@
+export const menuItems = [
+  {
+    title: 'Product',
+    url: '/product',
+    submenu: [
+      {
+        title: 'Overview',
+        url: 'overview',
+      },
+      {
+        title: 'Pricing',
+        url: 'pricing',
+      },
+      {
+        title: 'Marketplace',
+        url: 'marketplace',
+      },
+      {
+        title: 'Features',
+        url: 'features',
+      },
+      {
+        title: 'Integrations',
+        url: 'integrations',
+      },
+    ],
+  },
+  {
+    title: 'Company',
+    url: '/company',
+    submenu: [
+      {
+        title: 'About',
+        url: 'about',
+      },
+      {
+        title: 'Team',
+        url: 'team',
+      },
+      {
+        title: 'Blog',
+        url: 'blog',
+      },
+      {
+        title: 'Careers',
+        url: 'careers',
+      },
+    ],
+  },
+  {
+    title: 'Connect',
+    url: '/connect',
+    submenu: [
+      {
+        title: 'Contact',
+        url: 'contact',
+      },
+      {
+        title: 'Newsletter',
+        url: 'newsletter',
+      },
+      {
+        title: 'Linkedin',
+        url: 'linkedin',
+      },
+    ],
+  },
+];
+
 export const footerLinks = [
   {
     title: "Product",

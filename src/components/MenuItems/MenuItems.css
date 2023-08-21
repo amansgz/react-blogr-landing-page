@@ -1,0 +1,9 @@
+.menu-items {
+  text-align: center;
+}
+.menu-items button {
+  border: none;
+  background-color: transparent;
+  color: var(--clr-text-dark);
+  font-weight: var(--fw-bold);
+}
